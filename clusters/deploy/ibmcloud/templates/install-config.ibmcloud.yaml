@@ -11,7 +11,7 @@ controlPlane:
       type: {{ .Values.masters.machineType }}
 compute:
 - hyperthreading: Enabled
-  name: 'worker'
+  name: worker
   replicas: {{ .Values.workers.count }}
   platform:
     ibmcloud:
