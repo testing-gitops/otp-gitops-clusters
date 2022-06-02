@@ -12,6 +12,6 @@ spec:
   name: worker
   platform:
     ibmcloud:
-#      type: {{ .Values.workers.machineType }}
+      type: bx2.4x16
   replicas: {{ .Values.workers.count }}
 
