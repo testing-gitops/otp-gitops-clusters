@@ -5,7 +5,6 @@ clusterSet:
   name: "multicloud-cluster-set"
   enabled: false
 
-
 powerState: Running
 
 provider:
