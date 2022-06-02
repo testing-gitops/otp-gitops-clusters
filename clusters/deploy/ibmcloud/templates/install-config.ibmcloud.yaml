@@ -8,14 +8,14 @@ controlPlane:
   replicas: {{ .Values.masters.count }}
   platform:
     ibmcloud:
-      type: {{ .Values.masters.machineType }}
+#      type: {{ .Values.masters.machineType }}
 compute:
 - hyperthreading: Enabled
   name: worker
   replicas: {{ .Values.workers.count }}
   platform:
     ibmcloud:
-      type: {{ .Values.workers.machineType }}
+#      type: {{ .Values.workers.machineType }}
 networking:
   clusterNetwork:
   - cidr: {{ .Values.network.clusterCidr }} 
