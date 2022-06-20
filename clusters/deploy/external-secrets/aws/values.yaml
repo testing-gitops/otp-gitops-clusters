@@ -1,0 +1,37 @@
+cluster: aws1
+
+managedCluster: 
+  status: "disabled" # Valid values "enabled" or "disabled"
+  managedRepo: https://github.com/testing-gitops/otp-gitops.git # Repository that will be used to manage the Cluster resources 
+
+imageName: 4.8.25
+
+clusterSet:
+  name: "multicloud-cluster-set"
+  enabled: true
+
+powerState: Running
+  
+provider:
+  region: ap-southeast-1
+  baseDomain: mutihybridcloudkitchen.com
+  sshPublickey: 
+
+masters:
+  count: 3
+  diskIops: 4000
+  diskSize: 100
+  diskType: io1
+  machineType: m5.xlarge
+
+workers:
+  count: 3
+  diskIops: 4000
+  diskSize: 100
+  diskType: io1
+  machineType: m5.xlarge
+
+network:
+  clusterCidr: 10.128.0.0/14
+  machineCidr: 10.0.0.0/16
+  serviceCidr: 172.30.0.0/16
