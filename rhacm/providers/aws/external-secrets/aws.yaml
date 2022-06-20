@@ -36,9 +36,9 @@ spec:
           cluster.open-cluster-management.io/type: aws
       type: Opaque
       data:
-        aws_access_key_id: "{{ .awsAccessKeyId | toString }}"
-        aws_secret_access_key: "{{ .awsSecretAccessKey | toString }}"
-        baseDomain: "{{ .baseDomain | toString }}"
+        aws_access_key_id: "{{ .awsAccessKey | toString }}"
+        aws_secret_access_key: "{{ .awsSecretKey | toString }}"
+        baseDomain: "{{ .awsBaseDomain | toString }}"
         pullSecret: "{{ .openshiftPullSecret | toString }}"
         ssh-publickey: "{{ .openshiftSSHPublicKey | toString }}"
         ssh-privatekey: "{{ .openshiftSSHPrivateKey | toString }}"
