@@ -12,7 +12,7 @@ spec:
       key: 57afa209-35b7-da90-5b92-9621cc27030c
   - secretKey: awsBaseDomain
     remoteRef:
-      key: b047d458-54d9-f6d4-f21c-d24b9b129d99
+      key: 48dcb7e2-fefe-fb2a-548d-8692d1680408 
   - secretKey: openshiftPullSecret
     remoteRef:
       key: adc32372-cafe-0488-a9ab-6a971a6ca2d8
