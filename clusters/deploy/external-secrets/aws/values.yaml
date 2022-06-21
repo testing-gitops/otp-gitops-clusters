@@ -1,10 +1,10 @@
-cluster: aws1
+cluster: 
 
 managedCluster: 
   status: "disabled" # Valid values "enabled" or "disabled"
   managedRepo: https://github.com/testing-gitops/otp-gitops.git # Repository that will be used to manage the Cluster resources 
 
-imageName: 4.8.25
+imageName: 4.10.18
 
 clusterSet:
   name: "multicloud-cluster-set"
