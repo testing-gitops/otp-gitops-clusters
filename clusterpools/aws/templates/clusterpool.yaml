@@ -23,6 +23,7 @@ spec:
     name: img{{ .Values.imageName }}-x86-64-appsub
   pullSecretRef:
     name: {{ .Values.clusterpoolName }}-pull-secret
+  skipMachinePools: true # Disable MachinePool as using custom install-config
   platform:
     aws:
       credentialsSecretRef:
