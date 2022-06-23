@@ -1,0 +1,5 @@
+# Cluster Claim Name, will be used to set Cluster Name
+clusterClaimName:
+
+# Cluster Pool to claim cluster from
+clusterPoolName:
