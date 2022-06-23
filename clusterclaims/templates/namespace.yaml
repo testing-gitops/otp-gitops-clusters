@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  annotations:
-    argocd.argoproj.io/sync-wave: "340"
-    helm.sh/hook-weight: "340"
-  name: {{ .Values.clusterClaimName }}
