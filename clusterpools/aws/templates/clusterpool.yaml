@@ -27,7 +27,7 @@ spec:
   platform:
     aws:
       credentialsSecretRef:
-        name: {{ .Values.cluster }}-aws-creds
+        name: {{ .Values.clusterpoolName }}-aws-creds
       region: {{ .Values.provider.region }}
 
   
