@@ -1,5 +1,5 @@
 apiVersion: hive.openshift.io/v1
-kind: ClusterDeployment
+kind: ClusterPool
 metadata:
   name: '{{ .Values.clusterpoolName }}'
   annotations:
