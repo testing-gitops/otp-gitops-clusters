@@ -5,7 +5,8 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "350"
     helm.sh/hook-weight: "350"
+  labels:
+    name: {{ .Values.clusterClaimName }} 
   namespace: 'rhacm-clusterpools'
 spec:
   clusterPoolName: {{ .Values.clusterPoolName }}
-  namespace: {{ .Values.clusterClaimName }} 
