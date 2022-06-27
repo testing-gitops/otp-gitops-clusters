@@ -10,4 +10,4 @@ metadata:
   namespace: 'rhacm-clusterpools'
 spec:
   clusterPoolName: {{ .Values.clusterPoolName }}
-  namespace: {{ .Values.clusterClaimName }} 
+
