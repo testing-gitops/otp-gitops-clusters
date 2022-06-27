@@ -4,6 +4,8 @@ clusterClaimName:
 # Cluster Pool to use to claim cluster.
 clusterPoolName:
 
+powerState: Running
+
 # Manage Cluster from Hub Cluster repository
 managedCluster: 
   status: "disabled" # Default: disabled. Valid values "enabled" or "disabled"

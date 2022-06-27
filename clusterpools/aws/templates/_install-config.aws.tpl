@@ -33,7 +33,7 @@ networking:
     hostPrefix: 23
   machineNetwork:
   - cidr: {{ .Values.network.machineCidr }}
-  networkType: OpenShiftSDN
+  networkType: OVNKubernetes
   serviceNetwork:
   - {{ .Values.network.serviceCidr }} 
 platform:
