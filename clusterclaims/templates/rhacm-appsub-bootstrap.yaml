@@ -65,5 +65,5 @@ metadata:
 spec:
   clusterSelector:
     matchLabels:
-      name: {{ .Values.clusterClaimName }}
+      clusterClaimName: {{ .Values.clusterClaimName }}
 {{- end -}}
