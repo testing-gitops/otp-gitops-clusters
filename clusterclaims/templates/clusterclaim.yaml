@@ -7,6 +7,6 @@ metadata:
     helm.sh/hook-weight: "350"
   labels:
     name: {{ .Values.clusterClaimName }} 
-  namespace: 'rhacm-clusterclaims'
+  namespace: 'rhacm-clusterpool'
 spec:
   clusterPoolName: {{ .Values.clusterPoolName }}
